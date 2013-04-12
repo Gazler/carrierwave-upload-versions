@@ -1,0 +1,6 @@
+<% @users.each do |user| %>
+  <br />
+  <%= user.name %> | <%= user.avatar.url %> | <%= user.avatar.thumb.url %>
+<% end %>
+
+<p><%=link_to("New User", new_user_path) %>

@@ -1,0 +1,14 @@
+<h1>New User<h1>
+
+<%= form_for(@user, :html => {:class => "form-horizontal", :multipart => true}) do |f| %>
+
+  <%= f.text_field :name %>
+
+  <br />
+  <%= f.file_field :avatar %>
+  <%= f.hidden_field :avatar_cache %>
+
+  <br />
+  <%= f.submit %>
+<% end %>
+
